@@ -13,7 +13,7 @@ class TestBoaConstrictor(unittest.TestCase):
         self.assertEqual(self.boa.calcular_flete(), 64.4)
         
     def test_alimentar(self):
-        for _ in range(10):
+        for _ in range(20):
             self.boa.comer_raton()
             
         with self.assertRaises(ValueError) as context:
